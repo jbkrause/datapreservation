@@ -30,6 +30,6 @@ for f in ls:
         if not f[0]=='.':
             print('\nCreating bag for: %s' % (f,))
             print('======================================')
-            os.system('bagit.py --%s %s' % (checksum, f))
+            os.system('bagit.py --%s "%s"' % (checksum, f))
             print('======================================')
 
